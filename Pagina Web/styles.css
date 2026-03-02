@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #283cf1;
+    --secondary-color: #ffffff;
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: var(--bg);
+}
+
+header {
+    background: var(--primary);
+    color: rgb(47, 65, 231);
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+aside {
+    width: 220px;
+    background: rgba(0, 0, 0, 0.212);
+    padding: 20px;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(216, 204, 204);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Badges */
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: rgb(141, 20, 240);
+    font-size: 12px;
+}
+
+.high {
+    background: var(--high);
+}
+
+.medium {
+    background: var(--medium);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
